@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Youtubeシャットアウター",
+  "version": "3.59.2",
+  "description": "Youtubeのコメントを非表示にする拡張機能です。Shortsにも対応しています。",
+  "permissions": [
+      "activeTab"
+  ],
+  "content_scripts": [
+      {
+          "matches": ["https://www.youtube.com/*"],
+          "js": ["content.js"],
+          "css": ["style.css"]
+      }
+  ],
+  "icons": {
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+  },
+  "author": "KuR"
+}
